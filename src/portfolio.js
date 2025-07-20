@@ -12,7 +12,7 @@ const about = {
   description:
     'Enthusiastic about literature, letter games, classic cinematography, and music. I am a meticulous person who values rigor, precision and quick decision making. I constantly seek to expand my understanding of various subjects, I value Wikipedia as a key source of knowledge, for research and general culture purposes. I also program applications in my free time, and I keep track of financial markets, I manage my own portfolio, CAC40 and Cryptocurrency.',
     
-  resume: 'cleanfolio/Resume_Cherel.pdf',
+  resume: './Resume_Cherel.pdf',
   social: {
     linkedin: 'https://linkedin.com/in/bastiencherel',
     github: 'https://github.com/BastienCherel',
