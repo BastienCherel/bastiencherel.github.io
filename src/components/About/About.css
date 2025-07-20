@@ -13,6 +13,7 @@
 
 .about__desc {
   font-size: 1rem;
+  text-align: justify;
   max-width: 600px;
 }
 

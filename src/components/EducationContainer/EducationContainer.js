@@ -1,9 +1,9 @@
 import uniqid from 'uniqid'
-import GitHubIcon from '@material-ui/icons/GitHub'
-import LaunchIcon from '@material-ui/icons/Launch'
-import './ProjectContainer.css'
+import AttachmentIcon from '@material-ui/icons/Attachment';
+import WebsiteIcon from '@material-ui/icons/Language';
+import './EducationContainer.css'
 
-const ProjectContainer = ({ project }) => (
+const EducationContainer = ({ project }) => (
   <div className='project'>
     <h3>  {project.logo && (
     <img
@@ -13,7 +13,17 @@ const ProjectContainer = ({ project }) => (
     />
   )}{project.name}</h3>
 
+    {project.major && (
+      <ul className='project__major'>
+        {project.major.map((item) => (
+          <li key={uniqid()} className='project__major-item'>
+            {item}
+          </li>
+        ))}
+      </ul>
+    )}
     <p className='project__description'>{project.description}</p>
+
     {project.stack && (
       <ul className='project__stack'>
         {project.stack.map((item) => (
@@ -23,27 +33,25 @@ const ProjectContainer = ({ project }) => (
         ))}
       </ul>
     )}
-
-    {project.sourceCode && (
+    {project.attachment && (
       <a
-        href={project.sourceCode}
-        aria-label='source code'
-        className='link link--icon'
-      >
-        <GitHubIcon />
-      </a>
-    )}
-
-    {project.livePreview && (
-      <a
-        href={project.livePreview}
+        href={project.attachment}
         aria-label='live preview'
         className='link link--icon'
       >
-        <LaunchIcon />
+        <AttachmentIcon />
+      </a>
+    )}
+    {project.website && (
+      <a
+        href={project.website}
+        aria-label='live preview'
+        className='link link--icon'
+      >
+        <WebsiteIcon />
       </a>
     )}
   </div>
 )
 
-export default ProjectContainer
+export default EducationContainer
