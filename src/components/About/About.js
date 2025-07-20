@@ -10,14 +10,21 @@ const About = () => {
   return (
     <div className='about center'>
       {name && (
-        <h1>
+        <h1 style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
           {pp && (
-          <img
-            src={pp}
-            alt={`${name}`}
-            style={{ height: '3em', marginRight: '0.5em', verticalAlign: 'middle' ,borderRadius: '50%'}}
-          />
-        )}<span className='about__name'>{name}.</span>
+            <img
+              src={pp}
+              alt={name}
+              style={{
+                height: '2em',
+                width: '2em',
+                marginRight: '0.5em',
+                borderRadius: '50%',
+                flexShrink: 0,
+              }}
+            />
+          )}
+          <span className="about__name">{name}.</span>
         </h1>
       )}
 
