@@ -7,15 +7,14 @@ const header = {
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Bastien Cherel',
-  header: '',
+  header: 'Seeking a data related position starting in september 2025',
   pp: './assets/1692916852292.jpeg',
   description:
     'Enthusiastic about literature, letter games, classic cinematography, and music. I am a meticulous person who values rigor, precision and quick decision making. I constantly seek to expand my understanding of various subjects, I value Wikipedia as a key source of knowledge, for research and general culture purposes. I also program applications in my free time, and I keep track of financial markets, I manage my own portfolio, CAC40 and Cryptocurrency.',
-    
-  resume: './Resume.pdf',
   social: {
     linkedin: 'https://linkedin.com/in/bastiencherel',
     github: 'https://github.com/BastienCherel',
+    email: 'bastien.cherel@icloud.com'
   },
 }
 
@@ -25,36 +24,44 @@ const projects = [
   {
     name: 'Sentiment analysis',
     description:
-      'Trip advisor commentary analysis, scrapping commentaries and sentiment analysis toxicity',
+      'Scrapping TripAdvisor hotel commentaries and proportion analysis on toxicity',
     stack: ['Python', 'OpenAI API'],
     sourceCode: 'https://github.com/BastienCherel/Web-scraping',
   },
   {
     name: 'Financial tracker',
     description:
-      'Scrapping CAC40 components and monitor stock price and metrics embbedded in in a cloud cluster',
-    stack: ['Bash', 'Python', 'Django'],
+      'Scrapping CAC40 components, monitor stock price and metrics on a cloud cluster',
+    stack: ['Bash', 'Python', 'Django', 'AWS'],
   },
   {
     name: 'Retirement simulator',
     description:
-      'Simulation of retirement plans (PERECO, PERO,...) Synthesis generation of final outcomes per plan and expected revenue',
+      'Simulation of retirement plans (PERECO, PERO,...) and synthesis generation of expected revenue',
     stack: ['Python','Django', 'PostgreSQL'],
   },
   {
     name: 'Wealth management',
     description:
-      'Track family movable immovable assets, ultimate aim to optimize investments',
+      'Track family movable immovable assets, aim to optimize investments',
     stack: ['Python','Django', 'PostgreSQL'],
     sourceCode: '',
     livePreview: '',
   },
   {
-    name: 'JPMorgan Hackathon',
+    name: 'JPMorgan hackathon',
     description:
       'Data science and analytics challenge to bring solutions to help nonprofit organizations',
     stack: ['R', 'Python'],
     sourceCode: '',
+    livePreview: '',
+  },
+  {
+    name: 'Californian housing',
+    description:
+      'House values modeling app with CI/CD, network isolation, Docker container security and Docker Hub',
+    stack: ['Python', 'Docker', 'PostgreSQL','CI/CD', 'Git/GitLab'],
+    sourceCode: 'https://github.com/BastienCherel/project-containerization',
     livePreview: '',
   },
 ]
@@ -81,8 +88,8 @@ const professionnalexperiences = [
     role: 'Data Engineer',
     team: 'Corporate Asset Valuation',
     description:
-      'Ad-hoc project to uniformize international vehicle models. Benchmark to compare vehicle prices and residual values at maturity of the contracts for ready for cotation vehicles',
-    stack: ['Python', 'Dataiku', 'Tableau'],
+      'Uniformize international vehicle models. Benchmark vehicle prices and expert residual values from car catalogs',
+    stack: ['Python','Scikit-learn', 'Dataiku','Excel', 'Tableau'],
   },
   {
     logo : './assets/boehringer_ingelheim_logo.jpeg',
@@ -90,7 +97,7 @@ const professionnalexperiences = [
     role: 'Data Analyst',
     team: 'Global Biostatistics and Data Science',
     description:
-      'Workflow simulation with work-in-progress constraints, using queuing theory to compare and analyze the performance of different scenarios',
+      'Workflow simulation with work-in-progress constraints, to compare and analyze the performance of different scenarios',
     stack: ['R', 'LaTeX'],
   },
   {
@@ -99,7 +106,7 @@ const professionnalexperiences = [
     role: 'Data Scientist',
     team: 'Asset Optimization',
     description:
-      'Developed tailored solutions including steel structure weight modeling and a scalable dashboard designed for future data enhancement and time efficiency',
+      'Modeling steel structure weight in dashboard designed for time efficiency and future data enhancement',
     stack: ['R', 'autoCAD', 'Excel'],
   },
 ]
@@ -123,7 +130,7 @@ const skills = [
 
 const contact = {
   // email is optional - if left empty Contact section won't show up
-  email: 'bastien.cherel@icloud.com',
+  email: '',
 }
 
 export { header, about, projects, educations, professionnalexperiences, skills, contact }
